@@ -2,12 +2,12 @@
 
 This repository contains the C++ implementations of all algorithms presented in the paper:
 > **A regular perspective on solving the irregular strip packing problem with the dotted-board model: a mosaic approach and a divide-and-conquer strategy**  
-> *Maxence Delorme and José Fernando Oliveira*
+> *[Maxence Delorme](https://www.tilburguniversity.edu/staff/m-delorme) and [José Fernando Oliveira](https://sigarra.up.pt/feup/en/func_geral.formview?p_codigo=209980)*
 
 ## Dependencies
 
 Our C++ algorithms rely on the following:
-- **Gurobi Optimizer:** Commercial ILP solver (requires a valid license).
+- **[Gurobi Optimizer](https://www.gurobi.com/):** Commercial ILP solver (requires a valid license).
 - **[Clipper2](https://github.com/AngusJohnson/Clipper2):** Polygon clipping library used to detect pairwise incompatibilities and construct mosaics.
 - **[ECC8](https://github.com/Pronte/ECC):** Software library used to compute a minimum edge clique cover.
 
