@@ -1,0 +1,1 @@
+# A-regular-perspective-on-solving-the-irregular-strip-packing-problem-with-the-dotted-board-model-
