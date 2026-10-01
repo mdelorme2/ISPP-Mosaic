@@ -1,1 +1,64 @@
-# A-regular-perspective-on-solving-the-irregular-strip-packing-problem-with-the-dotted-board-model-
+# A regular perspective on solving the irregular strip packing problem with the dotted-board model: a mosaic approach and a divide-and-conquer strategy
+
+This repository contains the C++ implementations of all algorithms presented in the paper:
+> **A regular perspective on solving the irregular strip packing problem with the dotted-board model: a mosaic approach and a divide-and-conquer strategy**  
+> *Maxence Delorme and José Fernando Oliveira*
+
+## Dependencies
+
+Our C++ algorithms rely on the following:
+- **Gurobi Optimizer:** Commercial ILP solver (requires a valid license).
+- **[Clipper2](https://github.com/AngusJohnson/Clipper2):** Polygon clipping library used to detect pairwise incompatibilities and construct mosaics.
+- **[ECC8](https://github.com/Pronte/ECC):** Software library used to compute a minimum edge clique cover.
+
+---
+
+## List of Approaches
+
+This repository includes 12 approaches corresponding to the methods described in the paper:
+
+| Folder | Method Description |
+| :--- | :--- |
+| `1_PAIRWISE` | The PAIRWISE approach |
+| `2_CLIQUE_X1` | The CLIQUEx1 approach |
+| `3_CLIQUE_X10` | The CLIQUEx10 approach |
+| `4_MOSAICSC` | The MOSAIC approach |
+| `5_MTSC` | The MT 1×1 approach with MT_SC |
+| `6_MTOSC` | The MT 1×1 approach with MT^O_SC |
+| `7_MTOSCF` | The MT 1×1 approach with MT^O_SC-F |
+| `8_MTOSCF_NZ` | Best MT 1×1 approach & non-zero reduction strategy (12 configurations via parameters) |
+| `9_MTOSCF_NZ_MV` | MT 1×1 OBJ1, OBJ2, and OBJ3 approaches (selectable via parameters) |
+| `A_MTOSCF_NZ_DB` | The MT 1×1 OBJ4 approach |
+| `B_MTOSCF_NZ_LINKF` | The MT 1×1 OBJ5 approach |
+| `C_MTOSCF_NZ_LINKFANDINC` | The MT 1×1 OBJ6 approach |
+
+---
+
+## Folder Structure
+
+Each approach folder shares a common code structure. For example, `1_PAIRWISE` contains:
+
+| File | Description |
+| :--- | :--- |
+| `helper_functions_part1.cpp` | Input/Output helper functions |
+| `helper_functions_part2.cpp` | Secondary functions for PAIRWISE and CLIQUE approaches |
+| `helper_functions_part3.cpp` | Secondary functions for mosaic approaches |
+| `helper_functions.h` | Header file for `helper_functions_part{1,2,3}.cpp` |
+| `main.cpp` | Front-end code for the method *(varies by approach)* |
+| `main.h` | Header file corresponding to `main.cpp` |
+| `makefile` | Compilation script for Linux *(user must update library paths)* |
+| `time.cpp` / `time.h` | Generic module for measuring CPU computation time |
+
+> **Note:** All files except `main.cpp` are identical across all approach folders.
+
+Additionally, the root folder includes `Draw.py`, a Python utility script to convert output solution files into visual figures.
+
+---
+
+## Running an Approach
+
+1. Compile the project using the provided `makefile` inside the desired approach folder.
+2. Execute the compiled executable:
+
+```bash
+./PROGRAM "./PATH_INSTANCE" "NAME_INSTANCE" "./PATH_AND_NAME_OUTPUT_GENERAL" "./PATH_AND_NAME_SOLUTION"
