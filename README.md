@@ -60,8 +60,9 @@ Additionally, the root folder includes `Draw.py`, a Python utility script to con
 1. Compile the project using the provided `makefile` inside the desired approach folder.
 2. Execute the compiled executable:
 
-```bash
+```
 ./PROGRAM "./PATH_INSTANCE" "NAME_INSTANCE" "./PATH_AND_NAME_OUTPUT_GENERAL" "./PATH_AND_NAME_SOLUTION"
+```
 
 **Parameters:**
 - `PROGRAM`: Name of the compiled binary.
