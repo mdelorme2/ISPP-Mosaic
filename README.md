@@ -62,3 +62,19 @@ Additionally, the root folder includes `Draw.py`, a Python utility script to con
 
 ```bash
 ./PROGRAM "./PATH_INSTANCE" "NAME_INSTANCE" "./PATH_AND_NAME_OUTPUT_GENERAL" "./PATH_AND_NAME_SOLUTION"
+
+**Parameters:**
+- `PROGRAM`: Name of the compiled binary.
+- `./PATH_INSTANCE`: Relative path to the folder containing the instance file.
+- `NAME_INSTANCE`: Name of the target instance file.
+- `./PATH_AND_NAME_OUTPUT_GENERAL`: File path to write performance metrics (e.g., optimality status, CPU time, number of variables).
+- `./PATH_AND_NAME_OUTPUT_SOLUTION`: File path to save the solution file (compatible with `Draw.py`).
+
+An example execution script (`script_11.sh`) is provided in the repository.
+
+---
+
+## Contact & Feedback
+
+For questions, bug reports, or suggestions, please contact:  
+**Maxence Delorme** — `m.delorme[at]tilburguniversity[dot]edu` *(Subject line: **ISPP**)*
