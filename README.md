@@ -30,7 +30,7 @@ This repository includes 12 approaches corresponding to the methods described in
 | `9_MTOSCF_NZ_MV` | MT 1×1 OBJ1, OBJ2, and OBJ3 approaches (selectable via parameters) |
 | `A_MTOSCF_NZ_DB` | The MT 1×1 OBJ4 approach |
 | `B_MTOSCF_NZ_LINKF` | The MT 1×1 OBJ5 approach |
-| `C_MTOSCF_NZ_LINKFANDINC` | The MT 1×1 OBJ6 approach |
+| `C_MTOSCF_NZ_LINKFANDINC` | The MT 1×1 OBJ6 approach (to update for retrieving MT 1×1#X, MT 1×1 8T, MT 1×1 5H, and MT 1×1 8T5H) |
 
 ---
 
