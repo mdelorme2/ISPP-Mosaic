@@ -24,8 +24,8 @@ This repository includes 12 approaches corresponding to the methods described in
 | `3_CLIQUE_X10` | The CLIQUEx10 approach |
 | `4_MOSAICSC` | The MOSAIC approach |
 | `5_MTSC` | The MT 1×1 approach with MT_SC |
-| `6_MTOSC` | The MT 1×1 approach with MT^O_SC (mosaic size selectable via parameters) |
-| `7_MTOSCF` | The MT 1×1 approach with MT^O_SC-F (mosaic size selectable via parameters) |
+| `6_MTOSC` | The MT 1×1 approach with MT^O_SC (MT size selectable via parameters) |
+| `7_MTOSCF` | The MT 1×1 approach with MT^O_SC-F (MT size selectable via parameters) |
 | `8_MTOSCF_NZ` | Best MT 1×1 approach & non-zero reduction strategy (12 configurations via parameters) |
 | `9_MTOSCF_NZ_MV` | MT 1×1 OBJ1, OBJ2, and OBJ3 approaches (selectable via parameters) |
 | `A_MTOSCF_NZ_DB` | The MT 1×1 OBJ4 approach |
